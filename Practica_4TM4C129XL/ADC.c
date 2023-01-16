@@ -83,7 +83,7 @@ extern void Configura_Reg_ADC0(void)
     //NVIC->PRI4 = (NVICPRI4_R & 0xFFFFFF00) | 0x00000020;
     //NVIC->EN0 = 0x00010000;
     //Pag 1077 (ADCACTSS) Este registro controla la activación de los secuenciadores
-    ADC0->ACTSS = (0<<3) | (1<<2) | (1<<1) | (0<<0);
+    ADC0->ACTSS = (1<<3) | (0<<2) | (1<<1) | (0<<0);
     
 }
 
